@@ -1,38 +1,41 @@
 <template>
   <div class='home'>
      <swiper class="swiper" :options="swiperOption">
-      <swiper-slide>
-        <div class="title ani" swiper-animate-effect="slideInRight" swiper-animate-duration="2s">
-          首页
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="title ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="2s">
-          公司简介
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="title ani" swiper-animate-effect="slideInDown" swiper-animate-duration="2s">
-          公司资质
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <Contact></Contact>
-      </swiper-slide>
-     
+
+        <swiper-slide>
+          <Contact></Contact>
+        </swiper-slide>
+        <swiper-slide>
+          <Index></Index>
+        </swiper-slide>
+
+        <swiper-slide>
+          <Enterprise></Enterprise>
+        </swiper-slide>
+
+        <swiper-slide>
+          <Company></Company>
+        </swiper-slide>
       
-      
-      
-  </swiper>
+        
+   </swiper>
   </div>
 </template>
 
 <script>
+  import Company from "./Company.vue";
   import Contact from "./Contact.vue";
+  import Enterprise from "./Enterprise.vue";
+  import Index from "./Index.vue";
   import * as swiperAni from '../assets/js/swiper.animate.min.js'
   export default {
     name: "Home",
-    components:{Contact},
+    components:{
+      Contact,
+      Company,
+      Enterprise,
+      Index,
+    },
     data() {
       return {
         swiperOption: {

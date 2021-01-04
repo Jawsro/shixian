@@ -1,14 +1,14 @@
 <template>
   <div class="contact">
     <div class='title'>
-      <h4>联系方式</h4>
-      <p>Contact information</p>
+      <h3>联系方式:</h3>
+      <p>CONTACT INFORMATION</p>
     </div>
     <div class='continer '>
       <div class='img ani' swiper-animate-effect="fadeInDownBig zoomIn" swiper-animate-duration="1s">
         <img src="../assets/img/map.png" alt="">
       </div>
-      <div class='msg ani' swiper-animate-effect="fadeInUpBig " swiper-animate-duration="2s">
+      <div class='msg ani' swiper-animate-effect="fadeInUpBig " swiper-animate-duration="3s">
         <p>
           <span class='border-right'>联系电话</span>
           <span class='padding-left'>0717-6388115</span>
@@ -27,41 +27,68 @@
         </p>
       </div>
     </div>
+    
+    <div class='bottom'>
+      <div class='text'>
+        <p class='text1'>
+          合作共赢 一路同行
+        </p>
+        <p>
+          <span class='margin-right'>
+            E N T E R P R I S E
+          </span> 
+          <span>
+            P U B L I C I T Y
+          </span>
+        </p>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "Contact"
+  name: "Contact",
 };
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
   .contact
-    padding:$padding-medium
+    padding: 0 $padding-medium 0
     .title
-      border-bottom:1px solid #000
-      display:flex
       padding:$padding-small-s 0
-      h4
-        flex:1
+      color:$color 
+      h3
+        padding:$padding-small-s 0
       p
-        flex:1
-        text-align right
-        font-size:$font-size-medium-x 
-        color:$color-text-7
+        font-size:$font-size-small
+        font-weight:$font-weight-blod
     .continer
       margin-top:$margin-small
-      .img
+      color:$color-text
       .msg
         margin-top:$margin-medium
-        animation-duration:1.5s
         p
           margin-bottom:$margin-small-s
           .border-right
-            border-right:2px solid #777676
+            border-right:2px solid #606060
             padding-right: $padding-small
           .padding-left
             padding-left:$padding-small
+    .bottom
+      margin-top:$margin-large
+      color:$color 
+      background:#fff
+      z-index:9
+      font-weight:$font-weight-blod
+      padding-right:$padding-medium
+      padding-bottom:$margin-medium 
+      .text
+        text-align:right
+        .text1
+          padding:2px 0
+        .margin-right
+          margin-right:$margin-small
 
 </style>
