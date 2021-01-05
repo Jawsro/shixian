@@ -2,13 +2,13 @@
   <div class="contact">
     <div class='title'>
       <h3>联系方式:</h3>
-      <p>CONTACT INFORMATION</p>
+      <p>CONTACT US</p>
     </div>
     <div class='continer '>
       <div class='img ani' swiper-animate-effect="fadeInDownBig zoomIn" swiper-animate-duration="1s">
         <img src="../assets/img/map.png" alt="">
       </div>
-      <div class='msg ani' swiper-animate-effect="fadeInUpBig " swiper-animate-duration="3s">
+      <div class='msg ani' swiper-animate-effect="fadeInLeft" swiper-animate-duration="2s">
         <p>
           <span class='border-right'>联系电话</span>
           <span class='padding-left'>0717-6388115</span>
@@ -28,7 +28,7 @@
       </div>
     </div>
     
-    <div class='bottom'>
+    <div class='bottom ani' swiper-animate-effect="fadeInUpBig" swiper-animate-duration="2s">
       <div class='text'>
         <p class='text1'>
           合作共赢 一路同行
@@ -77,7 +77,10 @@ export default {
           .padding-left
             padding-left:$padding-small
     .bottom
-      margin-top:$margin-large
+      position:absolute
+      bottom:0
+      right:0
+      left:0
       color:$color 
       background:#fff
       z-index:9

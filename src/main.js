@@ -5,7 +5,7 @@ import store from "./store";
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import animated from 'animate.css';
-
+import 'lib-flexible';
 
 Vue.config.productionTip = false;
 Vue.use(VueAwesomeSwiper);

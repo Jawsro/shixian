@@ -1,12 +1,14 @@
 <template>
   <div class='home'>
      <swiper class="swiper" :options="swiperOption">
+         
 
         <swiper-slide>
-          <Contact></Contact>
-        </swiper-slide>
-        <swiper-slide>
           <Index></Index>
+        </swiper-slide>
+
+        <swiper-slide>
+          <Company></Company>
         </swiper-slide>
 
         <swiper-slide>
@@ -14,8 +16,17 @@
         </swiper-slide>
 
         <swiper-slide>
-          <Company></Company>
+          <Culture></Culture>
         </swiper-slide>
+
+        <swiper-slide>
+          <Contact></Contact>
+        </swiper-slide>
+        
+
+        
+
+        
       
         
    </swiper>
@@ -26,6 +37,7 @@
   import Company from "./Company.vue";
   import Contact from "./Contact.vue";
   import Enterprise from "./Enterprise.vue";
+  import Culture from "./Culture.vue";
   import Index from "./Index.vue";
   import * as swiperAni from '../assets/js/swiper.animate.min.js'
   export default {
@@ -35,6 +47,7 @@
       Company,
       Enterprise,
       Index,
+      Culture
     },
     data() {
       return {
@@ -62,4 +75,8 @@
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
+  .home
+    height:100%
+  .home /deep/ .swiper-container
+    height:100%
 </style>
