@@ -58,11 +58,11 @@ export default {
         height:80px
         margin-top:-40px
         .font-small
-          font-size:23px
+          font-size:21px
           padding-left:15px
           padding-bottom:5px
         .font-big
-          font-size:34px
+          font-size:32px
           padding-left:15px
     .bottom-text
       color:$color 

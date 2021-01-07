@@ -88,10 +88,9 @@ export default {
     .continer
       container()
       .msg
-        margin-top:$margin-medium
         main()
         .list
-          margin-top:40px
+          margin-top:12%
           .small-title
             .dian
               display: inline-block

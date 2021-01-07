@@ -7,7 +7,7 @@
 
     <div class='continer '>
       <div class='main'>
-      <div class='list'>
+      <div class='list list1'>
         <div class='img-text'>
           <div class='img'>
             <img src="../assets/img/business-img1.jpg" alt="">
@@ -105,10 +105,11 @@ export default {
     .continer
       container()
       .main
-        margin-top:$margin-medium
         main()
+        .list1
+          margin-top:12% !important
         .list
-          margin-top:$margin-large 
+          margin-top:10%
           .img-text
             display:flex
             margin-bottom:$margin-small-s
@@ -117,8 +118,8 @@ export default {
             .text
               flex:1
               margin-left:$margin-small
-              line-height:26px
-              font-size:$font-size-medium-x
+              line-height:30px
+              font-size:$font-size-medium
               letter-spacing:$letter-spacing
           .small-title
             .dian

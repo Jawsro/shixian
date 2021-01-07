@@ -7,7 +7,7 @@
     <div class='continer '>
       <div class='msg ani' swiper-animate-effect="fadeInUpBig " swiper-animate-duration="2s" swiper-animate-delay="0s">
        
-       <div class='list'>
+       <div class='list list1'>
           <div class='small-title'>
             <span class='dian'></span>
             <h3 class='text'>湖北武警宜昌支队</h3>
@@ -125,10 +125,12 @@ export default {
     .continer
       container()
       .msg
-        margin-top:$margin-medium
         main()
+        margin-top:4%
+        .list1
+          margin-top:0 !important
         .list
-          margin-top:$margin-large
+          margin-top:4%
           .small-title
             .dian
               display: inline-block
