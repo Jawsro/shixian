@@ -4,8 +4,10 @@ $font-size-small =12px
 $font-size-medium =14px
 $font-size-medium-x =16px
 $font-size-large =18px
+
 $font-size-large-x =22px
-$font-weight-blod = 550
+
+$font-weight-blod = 700
 
 //颜色定义规范
 $color = #129044
@@ -14,15 +16,38 @@ $color-text-7 = #777676
 $color-banckground = #129044
 $color-banckground-no = #5983A4
 
-//间距
+//内间距
 $padding-small-s = 5px
 $padding-small = 10px
 $padding-medium = 15px
-$margin-small-s = 5px
+
+//外间距
+$margin-small-s = 2px
 $margin-small = 10px
 $margin-medium = 15px
-$margin-large = 15px
+$margin-large = 20px
 $margin-large-x = 40px
-$line-height = 25px
+
+//行高
+$line-height = 35px
+
+//字体间距
 $letter-spacing = 2px
 
+//自定义高度
+$height = 550px
+
+//通用样式
+container()
+  margin-top:30px
+  margin-bottom:55px
+  position:absolute
+  top:8%
+  bottom:2%
+  left:15px
+  right:15px
+  color:$color-text 
+
+main()
+  height:100%
+  overflow-y:scroll 

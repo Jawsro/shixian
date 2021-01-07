@@ -1,34 +1,57 @@
 <template>
-  <div class="contact">
+  <div class="contact" :class="heightCss ? 'show-height' :'' ">
     <div class='title'>
       <h3>联系方式:</h3>
       <p>CONTACT US</p>
     </div>
     <div class='continer '>
-      <div class='img ani' swiper-animate-effect="fadeInDownBig zoomIn" swiper-animate-duration="1s">
-        <img src="../assets/img/map.png" alt="">
-      </div>
+     
       <div class='msg ani' swiper-animate-effect="fadeInLeft" swiper-animate-duration="2s">
-        <p>
-          <span class='border-right'>联系电话</span>
-          <span class='padding-left'>0717-6388115</span>
-        </p>
-        <p>
-          <span class='border-right'>人事邮箱</span>
-          <span class='padding-left'>2415545236@qq.com</span>
-        </p>
-        <p>
-          <span class='border-right'>公司地址</span>
-          <span class='padding-left'>宜昌市伍家岗区伍临路33号6栋7层</span>
-        </p>
-        <p>
-          <span class='border-right'>公司网址</span>
-          <span class='padding-left'>www.ycsxncp.com</span>
-        </p>
+         <div class='img ani' swiper-animate-effect="fadeInDownBig zoomIn" swiper-animate-duration="1s">
+          <img src="../assets/img/map.png" alt="">
+        </div>
+        <div class='list'>
+          <div class='text-color'>
+            <span class='dian'></span>
+            <span class='border-right'>联系电话</span>
+          </div>
+          <div class='padding-left'>0717-6388115</div>
+        </div>
+
+         <div class='list'>
+          <div class='text-color'>
+            <span class='dian'></span>
+            <span class='border-right'>移动电话</span>
+          </div>
+          <div class='padding-left'>1899589737（邹）</div>
+        </div>
+
+        <div class='list'>
+          <div class='text-color'>
+            <span class='dian'></span>
+            <span class='border-right'>电子邮箱</span>
+          </div>
+          <div class='padding-left'>2415545236@qq.com</div>
+        </div>
+
+        <div class='list'>
+          <div class='text-color'>
+            <span class='dian'></span>
+            <span class='border-right'>公司地址</span>
+          </div>
+          <div class='padding-left'>宜昌市伍家岗区伍临路33号6栋7层</div>
+        </div>
+
+         <div class='list'>
+          <div class='weixin-img'>
+            <img src="../assets/img/weixin.png"  alt="">
+          </div>
+        </div>
       </div>
+
     </div>
     
-    <div class='bottom ani' swiper-animate-effect="fadeInUpBig" swiper-animate-duration="2s">
+    <div class='bottom ani' swiper-animate-effect="fadeInLeft" swiper-animate-duration="2s">
       <div class='text'>
         <p class='text1'>
           合作共赢 一路同行
@@ -48,34 +71,56 @@
 </template>
 
 <script>
+import { heightMixin } from '../assets/js/mixin';
 export default {
+  mixins:[heightMixin],
   name: "Contact",
 };
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
+  .show-height
+    height:$height
+    overflow-y:scroll 
   .contact
     padding: 0 $padding-medium 0
     .title
-      padding:$padding-small-s 0
+      padding:$padding-medium 0 0 0
       color:$color 
       h3
         padding:$padding-small-s 0
+        font-size:$font-size-large
       p
         font-size:$font-size-small
         font-weight:$font-weight-blod
     .continer
-      margin-top:$margin-small
-      color:$color-text
+      container()
       .msg
-        margin-top:$margin-medium
-        p
-          margin-bottom:$margin-small-s
-          .border-right
-            border-right:2px solid #606060
-            padding-right: $padding-small
+        main()
+        .img
+          margin-bottom:$margin-medium
+        .list
+          margin-top:$margin-small 
+          .text-color
+            margin-bottom:$margin-small-s
+            .dian
+              display: inline-block
+              width:10px
+              height:10px
+              background:$color-banckground
+              border-radius:50%
+            .border-right
+              padding-left: $padding-small
+              color:$color
+              font-weight:$font-weight-blod
+              font-size:$font-size-medium-x
           .padding-left
-            padding-left:$padding-small
+            padding-left:$margin-large
+            letter-spacing:$letter-spacing
+            font-size:$font-size-medium
+          .weixin-img
+            width:120px
+            margin:0 auto
     .bottom
       position:absolute
       bottom:0

@@ -2,6 +2,8 @@
   <div class='home'>
      <swiper class="swiper" :options="swiperOption">
          
+        
+        
 
         <swiper-slide>
           <Index></Index>
@@ -17,6 +19,14 @@
 
         <swiper-slide>
           <Culture></Culture>
+        </swiper-slide>
+
+        <swiper-slide>
+          <Business></Business>
+        </swiper-slide>
+
+        <swiper-slide>
+          <Cooperate></Cooperate>
         </swiper-slide>
 
         <swiper-slide>
@@ -39,6 +49,8 @@
   import Enterprise from "./Enterprise.vue";
   import Culture from "./Culture.vue";
   import Index from "./Index.vue";
+  import Business from "./Business.vue";
+  import Cooperate from "./Cooperate.vue";
   import * as swiperAni from '../assets/js/swiper.animate.min.js'
   export default {
     name: "Home",
@@ -47,12 +59,15 @@
       Company,
       Enterprise,
       Index,
-      Culture
+      Culture,
+      Business,
+      Cooperate
     },
     data() {
       return {
         swiperOption: {
             loop: true,
+            /*direction: 'vertical',*/
             on: {
               init: function () {
                 swiperAni.swiperAnimateCache(this)
@@ -79,4 +94,6 @@
     height:100%
   .home /deep/ .swiper-container
     height:100%
+  .home /deep/ .swiper-pagination-bullet-active
+    background:#129044
 </style>
