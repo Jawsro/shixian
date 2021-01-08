@@ -6,11 +6,14 @@
     </div>
     <div class='continer '>
      
-      <div class='msg ani' swiper-animate-effect="fadeInLeft" swiper-animate-duration="2s">
-         <div class='img ani' swiper-animate-effect="fadeInDownBig zoomIn" swiper-animate-duration="1s">
+      <div class='msg '>
+         <div class='img ani' swiper-animate-effect="zoomIn" swiper-animate-duration="1s">
           <img src="../assets/img/map.png" alt="">
         </div>
-        <div class='list'>
+        <div class='list ani' 
+            swiper-animate-effect="fadeInUp" 
+            swiper-animate-duration="1s"
+            swiper-animate-delay="1s">
           <div class='text-color'>
             <span class='dian'></span>
             <span class='border-right'>联系电话</span>
@@ -18,7 +21,10 @@
           <div class='padding-left'>0717-6388115</div>
         </div>
 
-         <div class='list'>
+         <div class='list ani'
+              swiper-animate-effect="fadeInUp" 
+              swiper-animate-duration="1s"
+              swiper-animate-delay="2s">
           <div class='text-color'>
             <span class='dian'></span>
             <span class='border-right'>移动电话</span>
@@ -26,7 +32,10 @@
           <div class='padding-left'>1899589737（邹）</div>
         </div>
 
-        <div class='list'>
+        <div class='list ani'
+            swiper-animate-effect="fadeInUp" 
+            swiper-animate-duration="1s"
+            swiper-animate-delay="3s">
           <div class='text-color'>
             <span class='dian'></span>
             <span class='border-right'>电子邮箱</span>
@@ -34,7 +43,10 @@
           <div class='padding-left'>2415545236@qq.com</div>
         </div>
 
-        <div class='list'>
+        <div class='list ani'
+            swiper-animate-effect="fadeInUp" 
+            swiper-animate-duration="1s"
+            swiper-animate-delay="4s">
           <div class='text-color'>
             <span class='dian'></span>
             <span class='border-right'>公司地址</span>
@@ -42,7 +54,10 @@
           <div class='padding-left'>宜昌市伍家岗区伍临路33号6栋7层</div>
         </div>
 
-         <div class='list'>
+         <div class='list ani'
+              swiper-animate-effect="fadeInUp" 
+              swiper-animate-duration="1s"
+              swiper-animate-delay="5s">
           <div class='weixin-img'>
             <img src="../assets/img/weixin.png"  alt="">
           </div>
@@ -79,6 +94,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
+  .msg::-webkit-scrollbar
+    display: none 
   .show-height
     height:$height
     overflow-y:scroll 

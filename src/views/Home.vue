@@ -67,7 +67,7 @@
       return {
         swiperOption: {
             loop: true,
-            /*direction: 'vertical',*/
+            // direction: 'vertical',
             on: {
               init: function () {
                 swiperAni.swiperAnimateCache(this)

@@ -6,15 +6,23 @@
     </div>
     <div class='continer '>
       <div class='imgs'>
-        <div>
+        <div class='ani'
+              swiper-animate-effect="fadeInDownBig" 
+              swiper-animate-duration="1s">
           <img src="../assets/img/culture-img1.jpg" alt="">
         </div>
 
       <div class='middle'>
-        <div class='left'>
+        <div class='left ani'
+              swiper-animate-effect="fadeInLeftBig" 
+              swiper-animate-duration="1s"
+              swiper-animate-delay="1s">
           <img src="../assets/img/culture-img2.jpg" alt="">
         </div>
-        <div class='right'>
+        <div class='right ani'
+              swiper-animate-effect="fadeInRightBig" 
+              swiper-animate-duration="1s"
+              swiper-animate-delay="2s">
           <div class='right_img1'>
             <img src="../assets/img/culture-img3.jpg" alt="">
           </div>
@@ -24,7 +32,10 @@
         </div>
       </div>
 
-       <div class='lastimg'>
+       <div class='lastimg ani'
+              swiper-animate-effect="fadeInUpBig" 
+              swiper-animate-duration="1s"
+              swiper-animate-delay="3s">
         <img src="../assets/img/culture-img5.jpg" alt="">
       </div>
 
@@ -62,6 +73,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
  @import "../assets/css/common.styl"
+  .imgs::-webkit-scrollbar
+    display: none 
   .show-height
     height:$height
     overflow-y:scroll 

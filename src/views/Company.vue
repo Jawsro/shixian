@@ -75,6 +75,8 @@
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
+  .main::-webkit-scrollbar
+    display: none 
   .show-height
     height:$height
     overflow-y:scroll 

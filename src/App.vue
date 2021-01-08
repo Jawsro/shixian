@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-
+    <div class='yinyue' @click='play()'>
+      <audio src="./assets/img/bg1.mp3" autoplay loop='loop' id="video"></audio>
+    </div>
     <!--<div class='bottom'>
       <div class='text'>
         <p class='text1'>
@@ -19,7 +21,28 @@
     <router-view />
   </div>
 </template>
-
+<script>  
+   export default {
+      data() {
+          return {
+              
+          }
+      },
+      methods: {
+        play(){
+            let vo = document.getElementById("video")
+            if( vo.autoplay == true){
+              vo.autoplay = false
+              vo.play()
+            }else{
+              vo.autoplay = true
+              vo.pause()
+            }
+            
+        }
+      }
+  }
+</script>
 <style lang="stylus">
 @import "./assets/css/common.styl"
 #app
@@ -34,4 +57,31 @@
   bottom:0
   background:url("./assets/img/bg.jpg") center center no-repeat
   background-size: contain
+  .yinyue
+    width:30px
+    height:30px
+    position:absolute
+    top:25px
+    right:5px
+    z-index:9
+    background:url("./assets/img/muise.png") center center no-repeat
+    background-size: contain
+    animation: animations1 10s linear infinite forwards
+	  animation-play-state: paused
+    
+
+
+
+@keyframes animations1 {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	50% {
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
 </style>

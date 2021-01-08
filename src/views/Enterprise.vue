@@ -20,10 +20,10 @@
         <div class='list'>
         <div  class='small-title'>
           <span class='dian'></span>
-          <h3 class='text'>以人为本，超服务</h3>
+          <h3 class='text'>以人为本，超值服务，以专业赢得市场</h3>
         </div >
         <p class='list-text'>
-          以专业赢得市场，不论新客老客，不论需求大小，不论配送远近，我们都将按客户要求保质保量，准时准点的完成。
+          不论新客老客，不论需求大小，不论配送远近，我们都将按客户要求保质保量，准时准点的完成。
         </p>
        </div>
 
@@ -33,8 +33,8 @@
           <h3 class='text'>光荣使命，能力越大责任越大</h3>
         </div >
         <div class='list-text'>
-          <p>架起一座连接农村“田间地头”和消费者“餐桌”之间的桥梁。</p>
-          <p>为消费者提供优质安全的农产品，促进区域经济的快速发展。</p>
+          <p>架起一座连接农村“田间地头”和消费者“餐桌”之间的桥梁。 为消费者提供优质安全的农产品，促进区域经济的快速发展。</p>
+          <p></p>
         </div>
        </div>
 
@@ -71,6 +71,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
+  .msg::-webkit-scrollbar
+    display: none 
   .show-height
     height:$height
     overflow-y:scroll

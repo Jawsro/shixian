@@ -7,14 +7,16 @@
 
     <div class='continer '>
       <div class='main'>
-      <div class='list list1'>
+      <div class='list list1 ani'
+            swiper-animate-effect="rotateInDownLeft" 
+            swiper-animate-duration="1s">
         <div class='img-text'>
           <div class='img'>
             <img src="../assets/img/business-img1.jpg" alt="">
           </div>
           <div class='text'>
             <span>
-              即时下单，及时配送。为客户提供智能、安全、便捷的购物方式及优质的购物体验。
+              即时下单，及时配送。为客户提供智能、便捷的购物方式及优质的购物体验。
             </span>
           </div>
         </div>
@@ -24,7 +26,10 @@
         </div>
       </div> 
 
-      <div class='list'>
+      <div class='list ani'
+            swiper-animate-effect="rotateInDownRight" 
+            swiper-animate-duration="1s"
+            swiper-animate-delay="1s">
         <div class='img-text'>
           <div class='img'>
             <img src="../assets/img/business-img2.jpg" alt="">
@@ -35,20 +40,24 @@
             </span>
           </div>
         </div>
-        <div class='small-title'>
+        <div class='small-title '
+            >
           <span class='dian'></span>
           <span class='text'>线下渠道</span>
         </div>
       </div> 
 
-      <div class='list'>
+      <div class='list ani'
+            swiper-animate-effect="rotateInUpLeft" 
+            swiper-animate-duration="1s"
+            swiper-animate-delay="2s">
         <div class='img-text'>
           <div class='img'>
             <img src="../assets/img/business-img3.jpg" alt="">
           </div>
           <div class='text'>
             <span>
-              专业配送团队，全程冷链运输。保质保量、准时准点。为客户提供最好的配送服务。
+              专业配送团队，全程冷链运输。保质保量、准时准点。提供最好的配送服务。
             </span>
           </div>
         </div>
@@ -88,6 +97,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
+  .main::-webkit-scrollbar
+    display: none 
   .show-height
     height:$height
     overflow-y:scroll 
@@ -118,7 +129,7 @@ export default {
             .text
               flex:1
               margin-left:$margin-small
-              line-height:30px
+              line-height:210%
               font-size:$font-size-medium
               letter-spacing:$letter-spacing
           .small-title

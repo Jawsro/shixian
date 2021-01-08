@@ -13,7 +13,7 @@
             <h3 class='text'>湖北武警宜昌支队</h3>
           </div>
           <p class='list-text'>
-            合作时间：2019年03月——至今
+            合作时间：2019年03月
           </p>
        </div>
 
@@ -23,7 +23,7 @@
             <h3 class='text'>宜昌市机关事务服务中心</h3>
           </div>
           <p class='list-text'>
-            合作时间：2019年03月——至今
+            合作时间：2019年03月
           </p>
        </div>
 
@@ -33,7 +33,7 @@
             <h3 class='text'>宜昌高新区白洋小学</h3>
           </div>
           <div class='list-text'>
-            合作时间：2019年03月——至今
+            合作时间：2019年03月
           </div>
        </div>
 
@@ -43,7 +43,7 @@
             <h3 class='text'>宜昌市夷陵区机关事务服务中心机关</h3>
           </div>
           <p class='list-text'>
-            合作时间：2019年07月——至今
+            合作时间：2019年07月
           </p>
        </div>
 
@@ -53,7 +53,7 @@
             <h3 class='text'>宜昌市高新区管委会机关</h3>
           </div>
           <p class='list-text'>
-            合作时间：2019年09月——至今
+            合作时间：2019年09月
           </p>
        </div>
 
@@ -63,7 +63,7 @@
             <h3 class='text'>宜昌市三峡大学</h3>
           </div>
           <p class='list-text'>
-            合作时间：2020年08月——至今
+            合作时间：2020年08月
           </p>
        </div>
 
@@ -73,7 +73,7 @@
             <h3 class='text'>湖北交投紫云铁路有限公司</h3>
           </div>
           <p class='list-text'>
-            合作时间：2020年09月——至今
+            合作时间：2020年09月
           </p>
        </div>
 
@@ -108,6 +108,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/common.styl"
+  .msg::-webkit-scrollbar
+    display: none 
   .show-height
     height:$height
     overflow-y:scroll
