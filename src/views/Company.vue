@@ -98,6 +98,7 @@
         .swiper
           height:auto
           img
+            width:99%
             border:1px #fff solid
         .msg
           margin-top:$margin-large

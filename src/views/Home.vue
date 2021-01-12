@@ -66,7 +66,7 @@
     data() {
       return {
         swiperOption: {
-            loop: true,
+            // loop: true,
             // direction: 'vertical',
             on: {
               init: function () {

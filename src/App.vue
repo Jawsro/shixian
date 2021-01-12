@@ -3,21 +3,6 @@
     <div class='yinyue' @click='play()'>
       <audio src="./assets/img/bg1.mp3" autoplay loop='loop' id="video"></audio>
     </div>
-    <!--<div class='bottom'>
-      <div class='text'>
-        <p class='text1'>
-          合作共赢 一路同行
-        </p>
-        <p>
-          <span class='margin-right'>
-            E N T E R P R I S E
-          </span> 
-          <span>
-            P U B L I C I T Y
-          </span>
-        </p>
-      </div>
-    </div>-->
     <router-view />
   </div>
 </template>
@@ -61,7 +46,7 @@
     width:30px
     height:30px
     position:absolute
-    top:25px
+    top:35px
     right:5px
     z-index:9
     background:url("./assets/img/muise.png") center center no-repeat

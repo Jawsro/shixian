@@ -4,24 +4,37 @@
       <img src="../assets/img/logo.jpg" alt="">
     </div>
 
-    <div class='img ani' swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="2s">
+    <div class='img ani' 
+        swiper-animate-effect="fadeInLeftBig" 
+        swiper-animate-duration="2s" >
       <img src="../assets/img/img1.jpg" alt="">
     </div>
 
-    <div class='text-img ani' swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1s" swiper-animate-delay="1s">
+    <div class='text-img ani' 
+      swiper-animate-effect="fadeInRightBig" 
+      swiper-animate-duration="1s" 
+      swiper-animate-delay="1s">
       <img src="../assets/img/img2.jpg" alt="">
       <div class='textmsg'>
        <p class='font-small'> 宜昌时鲜农产品有限公司</p>
        <h2 class='font-big'>企业电子宣传册</h2>
       </div>
-      
     </div>
 
-    <div class='bottom-text ani' swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+    <div class='bottom-text ani' 
+      swiper-animate-effect="zoomIn"
+      swiper-animate-duration="1s"
+      swiper-animate-delay="2s">
       <p>绿色、智能、安全、便捷</p>
       <p>与时鲜携手，创优质生活</p>
     </div>
     
+    <div class='left ani'
+      swiper-animate-effect="fadeInRight"
+      swiper-animate-duration="2s"
+      swiper-animate-delay="3s">
+      <img src="../assets/img/left.png" alt="">
+    </div>
   </div>
 </template>
 <script>
@@ -38,7 +51,7 @@ export default {
     .img
       width:100%
       position:absolute
-      top:21%
+      top:19%
       left:0
       right:0
       text-align:right
@@ -75,4 +88,12 @@ export default {
         padding:0 0 $padding-small-s 0
         font-weight:$font-weight-blod
         font-size:$font-size-large
+    .left
+      height:40px
+      position:absolute
+      bottom:21%
+      animation-iteration-count: infinite;
+      img
+        width:30px
+
 </style>
